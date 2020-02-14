@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Node express app using mysql as a data base and handlebar to serve the html page. Single page app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-bit/burger.git"
+  },
+  "author": "Lucas Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-bit/burger/issues"
+  },
+  "homepage": "https://github.com/Lucas-bit/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.18.1"
+  }
+}
