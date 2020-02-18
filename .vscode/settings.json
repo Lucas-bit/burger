@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "burgers_db",
+            "dialect": "MySQL",
+            "name": "mydb",
+            "password": "Penguinpoo!7",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}
