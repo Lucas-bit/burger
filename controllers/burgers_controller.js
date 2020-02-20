@@ -5,6 +5,20 @@ const burgers = require('../models/burger')
 
 const router = express.Router()
 
+// router.get(express.static(__dirname + '/public')); // for css
+
+router.get(__dirname + "/public", function(req, res) {
+  burgers.all(function(data) {
+    var burgerObject = {
+      burgers: data
+    };
+    console.log(burgerObject);
+    res.render("index", burgerObject);
+  });
+});
+
+
+
 router.get("/", function(req, res){
     res.redirect("/burgers") //automatically returns to index because calls the slash burger route
 })

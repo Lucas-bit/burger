@@ -1,4 +1,54 @@
 body{
-    background-color: olive;
+    background-color: sandybrown;
 }
 
+.burgerTitle{
+    color: seagreen;
+    text-align: center;
+    padding-top: 20px;
+}
+
+ul {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+
+  h2 {
+      color: seagreen;
+      text-align: center
+  }
+
+  .created{
+    color: darkred;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .devoured{
+    color: tomato;
+    float: le
+  }
+
+  .button {
+    border-radius: 12px;
+    background-color: seagreen;
+    padding: 10px;
+    border: none;
+    box-shadow: 3px 3px 3px;
+    margin: 20px;
+  }
+
+  .burger-entry-group{
+    text-align: center;
+  }
+
+  .burger-entry-title{
+    color: seagreen
+  }
+
+  .burger-input{
+    border-radius: 5px;
+    border: none;
+ }
