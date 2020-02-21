@@ -32,16 +32,15 @@
   <div class = "col-sm-6">
     <h2 class = "created">Created Burgers</h2>
 
-    <ul class = "created" >
-      <li>
-      {{#each burger_Data}}
-      1
-        {{#unless this.devoured}}
+    <p class = "created" >
+        {{#each burger_Data }}
+      
+        <ul>{{#unless this.devoured}}</ul>
+
           {{this.burger_name}}
        {{/unless}}
       {{/each}}
-      </li>
-    </ul>
+    </p>
   </div>
 
   <div class="col-sm-6">
