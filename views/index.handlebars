@@ -21,11 +21,11 @@
 </form>
 
 
-<ul class = "burger_list">
-  {{#each burger}}
+{{!-- <ul class = "burger_list">
+  {{#each burger_name}}
     <li>{{this}}</li>
   {{/each}}
-</ul>
+</ul> --}}
 
 
 <div class = "row">
@@ -34,11 +34,13 @@
 
     <p class = "created" >
         {{#each burger_Data }}
-      
-        <ul>{{#unless this.devoured}}</ul>
 
-          {{this.burger_name}}
-       {{/unless}}
+        {{#unless this.devoured}}
+
+          <li><button>{{this.id}}. Click to Eat {{this.burger_name}}</button></li>
+        {{/unless}}
+
+
       {{/each}}
     </p>
   </div>
@@ -47,10 +49,10 @@
     <h2 class = "devoured">Devoured Burgers</h2>
 
     <ul class = "devoured">
-      {{#each burger}}
-        {{#if true}}
-          {{> burger devoured = true}}
-        {{/if}}
+      {{#each burger_Data}}
+          {{#if this.devoured}}
+          <li>{{this.burger_name}}</li>
+          {{/if}}
       {{/each}}
     </ul>
   </div>
