@@ -27,7 +27,7 @@ ul {
   }
 
   .devoured{
-    color: tomato;
+    color: darkred;
     float: le
   }
 
@@ -60,4 +60,46 @@ ul {
    margin-left: auto;
    margin-right: auto;
    border-radius: 200px;
+  }
+
+  .devoured {
+    background-color: sandybrown
+  }
+
+  .created-buttons{
+    background-color: seagreen;
+    padding: 7px;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+    margin: 20px;
+    border-radius: 12px;
+    color: black;
+    font-size: large !important;
+    margin-left: 0
+  }
+
+  .created-column{
+    margin-left: 8%;
+  }
+
+  .devoured-column{
+    margin-left: 40%
+  }
+
+  .devoured-buttons{
+    background-color: tomato;
+    padding: 7px;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+    margin: 20px;
+    border-radius: 12px;
+    color: darkred;
+    font-size: large !important;
+    margin-left: 0
+  }
+
+  
+  .created-list{
+    color: darkred
+    
   }
