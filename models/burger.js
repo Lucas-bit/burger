@@ -18,11 +18,21 @@ var burger = {
 }
 
 
+// var burgersArr = []
+
+// function guardarburgers() {
+//     var boxvalue = document.getElementById('burger-box').value; // confused here
+//     burgersArr.push(boxvalue);  
+//     console.log(burgersArr);
+//   }
+
+//   guardarburgers()
+
 // Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
 // DONE ^?
 
 
-
+//tell form where to post to
 
 
 module.exports = burger

@@ -1,5 +1,5 @@
 const express = require('express')
-const burgers = require('../models/burger') 
+const burgers = require('../models/burger.js') 
 
 // define routes
 
@@ -7,15 +7,15 @@ const router = express.Router()
 
 // router.get(express.static(__dirname + '/public')); // for css
 
-router.get(__dirname + "/public", function(req, res) {
-  burgers.all(function(data) {
-    var burgerObject = {
-      burgers: data
-    };
-    console.log(burgerObject);
-    res.render("index", burgerObject);
-  });
-});
+// router.get(__dirname + "/public", function(req, res) {
+//   burgers.all(function(data) {
+//     var burgerObject = {
+//       burgers: data
+//     };
+//     console.log(burgerObject);
+//     res.render("index", burgerObject);
+//   });
+// });
 
 
 
@@ -30,7 +30,8 @@ router.get("/burgers", function(req, res){
 })
 
 router.post("/burgers/create", function(req, res){
-    burgers.create(res.body.burgerName, function(result){
+    console.log(req.body)
+    burgers.create(req.body.name, function(result){
         console.log(result)
         res.redirect("/burgers")
     }) // in public folder have js folder taht calls these routes and then creates the burger
@@ -44,3 +45,6 @@ router.put("/burgers/:id", function(req, res){
 })
 
 module.exports = router
+
+//fix a route
+

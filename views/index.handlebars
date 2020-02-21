@@ -1,19 +1,23 @@
 
 
+
+
 <h1 class = "burgerTitle"> Burgers! </h1>
 
 <h2>Get ya Burgers!</h2>
 
+<img class = "burger-pic" src="assets/img/hamburger.jpg">
+
 <h2>Make a custom burger</h2>
 
-<form class="create-form  burger-entry-group">
+<form class="create-form burger-entry-group" action="/burgers/create" method="post"> 
 
   <div class="form-group">
     <label class = "burger-entry-title" for="ca">Burger Name:</label>
-    <input class = "burger-input" type="text" id="ca" name="name">
+    <input class = "burger-input" type="input" id="burger-box" name="name">
   </div>
 
-  <button class = "button" type="submit">Add Your Custom Burger</button>
+  <button class = "button" type="submit">Add Your Custom Burger</button> 
 </form>
 
 
@@ -29,11 +33,14 @@
     <h2 class = "created">Created Burgers</h2>
 
     <ul class = "created" >
-      {{#each burger}}
-        {{#if false}}
-          {{> burger created = true}}
-        {{/if}}
+      <li>
+      {{#each burger_Data}}
+      1
+        {{#unless this.devoured}}
+          {{this.burger_name}}
+       {{/unless}}
       {{/each}}
+      </li>
     </ul>
   </div>
 
@@ -51,4 +58,8 @@
 </div>
 
 
-
+<script>
+function myFunction() {
+  document.querySelector(".burger-entry-form").submit();
+}
+</script>
