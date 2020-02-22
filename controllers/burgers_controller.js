@@ -37,8 +37,9 @@ router.post("/burgers/create", function(req, res){
     }) // in public folder have js folder taht calls these routes and then creates the burger
 })
 
-router.put("/burgers/:id", function(req, res){
-    burgers.update(res.params.id, function(result){
+router.put("/putBurger", function(req, res){
+  console.log(req.body.id)
+    burgers.update(req.body.id, function(result){
         console.log(result)
         res.sendStatus(200)
     })

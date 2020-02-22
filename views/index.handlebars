@@ -32,9 +32,9 @@
         {{#each burger_Data }}
 
         {{#unless this.devoured}}
-          {{!-- <form action = "/burgers/:id" method = "put"> --}}
-            <li class = "created-list"><button class = "created-buttons" data-newDevoured = {{this.id}}>{{this.id}}. Click to eat your {{this.burger_name}}</button></li>
-          {{!-- </form> --}}
+          <form>
+            <li class = "created-list"><button class = "created-buttons" id = {{this.id}}>{{this.id}}. Click to eat your {{this.burger_name}}</button></li>
+          </form>
         {{/unless}}
 
 
@@ -57,7 +57,8 @@
 
 
 <script>
-function myFunction() {
-  document.querySelector(".burger-entry-form").submit();
-}
+
+
+
+
 </script>
