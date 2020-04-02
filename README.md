@@ -1,5 +1,5 @@
 # Eat-Da-Burger
-A fnu burger devouring app using the MVC architectural pattern. Type your burgers and submit them to be created, then click on their respective button to add them to the devoured list. 
+A fun burger devouring app using the MVC architectural pattern. Type your burgers and submit them to be created, then click on their respective button to add them to the devoured list. 
 
 # Technologies Used
 Model-View-Controller (MVC)
