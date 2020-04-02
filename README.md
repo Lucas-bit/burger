@@ -1,5 +1,5 @@
 # Eat-Da-Burger
-A burger devouring app using the MVC architectural pattern. Type your burgers and submit them to be created, then click on their respective button to add them to the devoured list. 
+A fnu burger devouring app using the MVC architectural pattern. Type your burgers and submit them to be created, then click on their respective button to add them to the devoured list. 
 
 # Technologies Used
 Model-View-Controller (MVC)
@@ -41,3 +41,13 @@ $ node server.js
 Navigate to localhost:3000 in the browser
 
 Add burgers to the New Burgers List and eat them!
+
+# Deployment
+Connect Github repository to Heroku app
+
+Install JawsDB MySQL as an Add On 
+
+Deploy through Heroku.
+
+# Author 
+Lucas Gonzalez lucasberatudgonzalez@gmail.com https://github.com/Lucas-bit https://lucas-bit.github.io/Nice-Portfolio/
