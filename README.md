@@ -25,8 +25,6 @@ $ git clone <repo>
 Navigate to the directory and install the dependencies
 
 $ npm install
-Application Design
-Application Design
 
 # Using the Application Locally
 Create a MySQL database and run the following files to set up the schema
